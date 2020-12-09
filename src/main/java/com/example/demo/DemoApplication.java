@@ -17,7 +17,7 @@ import java.net.InetSocketAddress;
 @SpringBootApplication
 @MapperScan({"com.example.demo.provider.dao"})
 public class DemoApplication implements CommandLineRunner {
-
+//public class DemoApplication{
     @Autowired
     private NettyServer nettyServer;
 
@@ -27,8 +27,9 @@ public class DemoApplication implements CommandLineRunner {
     public void run(String... strings) throws Exception{
         InetAddress inetAddress = InetAddress.getLocalHost();
         InetSocketAddress address = new InetSocketAddress(inetAddress.getHostAddress(),8085);
-        log.info("netty服务的启动地址为："+"127.0.0.1"+":"+"8085" );
+        log.info("netty服务的启动地址为："+"127.0.0.1"+":"+"8087" );
         nettyServer.start(address);
+
     }
 
     public static void main(String[] args) {

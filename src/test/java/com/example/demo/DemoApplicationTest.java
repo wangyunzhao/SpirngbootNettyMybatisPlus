@@ -1,15 +1,17 @@
 package com.example.demo;
 
 import com.example.demo.client.NettyClient;
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.Scanner;
 
-//@SpringBootTest
-class DemoApplicationTest {
+@SpringBootTest
+public class DemoApplicationTest {
 
-//    @Test
+    @Test
     void contextLoads() {
         //开启10条线程，每条线程就相当于一个客户端
 //        for (int i = 1; i <= 10; i++) {

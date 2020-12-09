@@ -11,8 +11,6 @@ import java.net.InetSocketAddress;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * @program: qingcheng
- * @author: XIONG CHUAN
  * @create: 2019-04-28 15:21
  * @description: netty服务端处理类
  **/

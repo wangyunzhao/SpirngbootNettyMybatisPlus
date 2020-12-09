@@ -26,8 +26,6 @@ public class UserService {
     public List<User> getUser(int channelId,int pageNo,int pageSize){
         Page<User> page = new Page<>(pageNo, pageSize);
         List<User> users = userDao.getUsers(channelId,page);
-//        User user= new User();
-//        Assert.notNull(user.getAccount(),"用户为空！");
         return users;
     }
 }

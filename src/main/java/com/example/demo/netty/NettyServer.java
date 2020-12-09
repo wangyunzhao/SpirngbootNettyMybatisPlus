@@ -12,8 +12,6 @@ import org.springframework.stereotype.Component;
 import java.net.InetSocketAddress;
 
 /**
- * @program: qingcheng
- * @author: XIONG CHUAN
  * @create: 2019-04-28 15:04
  * @description: netty服务启动类
  **/

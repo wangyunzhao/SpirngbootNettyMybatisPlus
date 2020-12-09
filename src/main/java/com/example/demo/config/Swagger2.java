@@ -20,10 +20,6 @@ import java.util.List;
 
 /**
  * swagger配置
- *
- * @author 刘雅雯
- * @version 1.0.0
- * @since 1.0.0 2019-1-24 11:36:03
  */
 @Configuration
 @EnableSwagger2

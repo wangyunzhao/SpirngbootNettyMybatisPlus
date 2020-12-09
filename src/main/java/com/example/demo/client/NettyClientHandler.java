@@ -10,9 +10,6 @@ import java.util.Date;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * @program: qingcheng
- * @author: XIONG CHUAN
- * @create: 2019-04-28 19:37
  * @description: 客户端处理类
  **/
 
