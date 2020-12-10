@@ -3,6 +3,7 @@ package com.example.demo.provider.controller;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.example.demo.entity.MJEntity;
+import com.example.demo.entity.MJSort;
 import com.example.demo.entity.User;
 import com.example.demo.provider.dao.UserDao;
 import com.example.demo.provider.service.UserService;
@@ -37,9 +38,17 @@ public class UserController {
     }
 
     @PostMapping("/getUser/mjEntity")
-    @ApiOperation(value = "枚举传值", notes = "枚举传值")
+    @ApiOperation(value = "枚举传值01", notes = "枚举传值01")
     public MJEntity getUser(@RequestBody MJEntity mjEntity){
         System.out.println(mjEntity.getPubDateEnum());
         return mjEntity;
+    }
+
+    @GetMapping("/getUser/enum")
+    @ApiOperation(value = "枚举传值02", notes = "枚举传值02")
+    public MJSort getUser(){
+        System.out.println(MJSort.SORT.getErrorCode()+MJSort.SORT.getErrorMsg());
+        System.out.println(MJSort.SORT);
+        return MJSort.SORT;
     }
 }
